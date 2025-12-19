@@ -216,7 +216,9 @@ const Section = ({
 const NavBar = () => (
   <nav className="fixed top-0 left-0 right-0 bg-slate-900/90 backdrop-blur-md z-50 border-b border-slate-800">
     <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <span className="text-xl font-bold text-teal-400">TN.</span>
+      <a href="#home" className="hover:text-teal-400 transition">
+        <span className="text-xl font-bold text-teal-400">TN.</span>
+      </a>
       <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
         <a href="#about" className="hover:text-teal-400 transition">
           Expertise
@@ -244,7 +246,10 @@ export default function Portfolio() {
       <NavBar />
 
       {/* HERO */}
-      <header className="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-6xl mx-auto pt-16">
+      <header
+        className="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-6xl mx-auto pt-16"
+        id="home"
+      >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

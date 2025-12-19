@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thushar Nandam Porfolio",
+  title: "Thushar Nandam | Porfolio",
   description: "Created by Thushar Nandam",
 };
 
